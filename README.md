@@ -26,8 +26,10 @@ This project was to create a very visually appealing letterhead template using a
 
 
 ## Sources and Credits
+I used a lot of previous knowledge in playing around with this one. That may have made it more difficult as I tried to accomplish things with that I know versus using new items that were covered in the reading that would have made this much easier/more efficient. I hope to review some of the previous weeks reading in addition to the next modules content and get caught up soon as work should slow down in the next week or two.
+
 
 - Background image: https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
 - Linear Gradient: https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
 - Dropshadow filter: https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow
-- 
+- GithubCopilot - I used github copilot to quickly add function comments (javascript like java docs)

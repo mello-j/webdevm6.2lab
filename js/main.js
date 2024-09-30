@@ -2,15 +2,16 @@ window.onload = loaded;
 
 /**
  * Simple Function that will be run when the browser is finished loading.
+ * Adds an event listener to the form.
  */
 function loaded() {
-    // Assign to a variable so we can set a breakpoint in the debugger!
-    const form = document.getElementById('option');
+    const form = document.getElementById('options');
     form.addEventListener('submit', submitForm);
 }
 
 /**
  * This function is called when the form is submitted.
+ * It prevents the default form submission and gets the selected option.
  * @param {Event} event the submit event
  */
 function submitForm(event) {
@@ -23,6 +24,12 @@ function submitForm(event) {
     } 
 }
 
+/**
+ * This function returns a message based on the selected option
+ * @param {*} option 
+ * @returns 
+ */
+
 function getAlertMessage(option) {
     switch(option) {
         case '1':
@@ -34,4 +41,3 @@ function getAlertMessage(option) {
         }
 }
 
-export { getAlertMessage };

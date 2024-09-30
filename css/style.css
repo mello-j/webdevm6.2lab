@@ -79,10 +79,13 @@ h1{
 
 .top-content {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 nav {
   margin-top: 200px;
+  font-style: italic;
+  font-size: x-small;
 }
 
 nav ul {
@@ -102,14 +105,26 @@ h2 {
   text-align: center;
   padding: auto;
   font-size: medium;
+  font-style: italic;
+
 }
 
 h3{
   font-size: small;
+  font-style: italic;
+
 }
 
 blockquote {
-  font-size: 10pt;
+  font-size: small;
+  font-style: italic;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.nested{
+  font-size: x-small;
 }
 
 .main-content {
@@ -117,10 +132,11 @@ blockquote {
   column-gap: 10px;
   margin: 10px;
   padding: auto;
-  font-size: 10pt;
+  font-size: small;
 }
 
 .address-content{
   padding: auto;
 }
+
 
