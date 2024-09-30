@@ -50,7 +50,7 @@ h1 {
  * Adds a border to the top and bottom of the letter 
  */
 
-body {
+article{
   /* Set top background image first to be fallback*/
   background-image: url(/img/top-image.png) no-repeat top center;
   /* Sets top and bottom backgrounds */
@@ -58,18 +58,15 @@ body {
   linear-gradient(rgba(1, 1, 1, 0.1), rgba(1, 1, 1, 0) 20%),
     url(/img/top-image.png),
     url(/img/bottom-image.png);
-  background-position: bottom center, top center, bottom center;
+  background-position: bottom center, top center;
   background-repeat: no-repeat;
   background-color: white;
   border-top: 1mm solid red;
   border-bottom: 1mm solid red;
-}
-
-article {
   display: flex;
   flex-direction: column;
-  padding: 10px;
 }
+
 
 h1{
   background-image: url(/img/logo.png);
@@ -78,41 +75,29 @@ h1{
   box-shadow: 2px 2px 2px red;
 }
 
-nav{
+.top-content {
   margin-top: 200px;
-  display: flex;
   justify-content: center;
 }
 
-nav ul{
+nav {
   display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-
-nav ul li{
-  margin: 0 10px;
-}
-
-nav a{
-  text-decoration: none;
-  color: black;
-}
-
-header {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   padding: 10px;
 }
 
-blockquote{
-  text-align: left;
+nav ul{
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-.main-content{
-  columns: 2;
-  column-gap: 10px;
-  margin-bottom: 150px;
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
 }
 
+.main-content {
+  columns: 2;;
+}
