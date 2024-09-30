@@ -5,14 +5,33 @@ window.onload = loaded;
  */
 function loaded() {
     // Assign to a variable so we can set a breakpoint in the debugger!
-    const hello = sayHello();
-    console.log(hello);
+    const form = document.getElementById('option');
+    form.addEventListener('submit', submitForm);
 }
 
 /**
- * This function returns the string 'hello'
- * @return {string} the string hello
+ * This function is called when the form is submitted.
+ * @param {Event} event the submit event
  */
-export function sayHello() {
-    return 'hello';
+function submitForm(event) {
+    event.preventDefault();
+    const selectedOption = document.querySelector('input[name="option"]:checked');
+            
+    if (selectedOption) {
+        const alertMessage = getAlertMessage(selectedOption.value);
+        alert(alertMessage);
+    } 
 }
+
+function getAlertMessage(option) {
+    switch(option) {
+        case '1':
+            return 'You selected option 1';
+        case '2':
+            return 'You selected option 2';
+        case '3':
+            return 'You selected option 3';    
+        }
+}
+
+export { getAlertMessage };
