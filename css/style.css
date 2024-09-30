@@ -39,3 +39,80 @@ h1 {
 }
 
 /* Your CSS below here */
+
+/** 
+ * This section addresses the main letter tasks
+ * Fixes the top image to the top of the letter
+ * Fixes the bottom image to the bottom of the letter
+ * Adds a semi-transparent gradient over the top of both backgrounds
+ * Adds the top image as a fallback for browsers
+ * Adds a whitebackground color to the letter
+ * Adds a border to the top and bottom of the letter 
+ */
+
+body {
+  /* Set top background image first to be fallback*/
+  background-image: url(/img/top-image.png) no-repeat top center;
+  /* Sets top and bottom backgrounds */
+  background-image: 
+  linear-gradient(rgba(1, 1, 1, 0.1), rgba(1, 1, 1, 0) 20%),
+    url(/img/top-image.png),
+    url(/img/bottom-image.png);
+  background-position: bottom center, top center, bottom center;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-top: 1mm solid red;
+  border-bottom: 1mm solid red;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+h1{
+  background-image: url(/img/logo.png);
+  /*filter: drop-shadow(10px 10px 10px red)*/
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px red;
+}
+
+nav{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+nav ul li{
+  margin: 0 10px;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+blockquote{
+  text-align: left;
+}
+
+.main-content{
+  columns: 2;
+  column-gap: 10px;
+  margin-bottom: 150px;
+}
+
